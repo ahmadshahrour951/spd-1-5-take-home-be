@@ -12,7 +12,7 @@ async function postMood(req, res, next) {
       {
         params: {
           q: 'San Francisco',
-          appid: '1254f00425c277540cb84fab6284fbdd',
+          appid: process.env.WEATHER_KEY,
         },
       }
     );
